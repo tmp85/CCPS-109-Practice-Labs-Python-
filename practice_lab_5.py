@@ -9,11 +9,9 @@ def stutter(seq, dup):
     return b
 print(stutter(seq,4))
 """
-
+#Returns the longest substring of a user-entered string that does not contain repeated characters
 def longest_without_repeat(text):
-    global no_repeat_strings_set
     no_repeat_strings_set = set()
-    character_check_set = set()
     for i in range(0,len(text)-1,1):
         character_check_set = set()
         character_check_set.add(text[i])
