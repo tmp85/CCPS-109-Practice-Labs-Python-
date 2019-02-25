@@ -1,6 +1,8 @@
 #Returns the longest substring of a user-entered string that does not contain repeated characters
 def longest_without_repeat(text):
     no_repeat_strings_set = set()
+    #Iterates through all substrings of the user-entered string and adds those without repeated characters
+    #to the set no_repeat_strings_set
     for i in range(0,len(text)-1,1):
         character_check_set = set()
         character_check_set.add(text[i])
@@ -11,6 +13,7 @@ def longest_without_repeat(text):
         no_repeat_strings_set.add(text[i:j+1])
     global longest_string
     longest_string = ""
+    #Returns the longest of the "no repeated character" strings in no_repeat_strings_set
     for strings in no_repeat_strings_set:
         if len(strings) > len(longest_string):
             longest_string = strings
