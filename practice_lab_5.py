@@ -1,14 +1,3 @@
-"""
-# repeats elements in seq, dup times in a new list
-seq = [1,'hello', 3]
-def stutter(seq, dup):
-    b = list()
-    for i in range(len(seq)):
-        for x in range(0,dup):
-            b.append(seq[i])
-    return b
-print(stutter(seq,4))
-"""
 #Returns the longest substring of a user-entered string that does not contain repeated characters
 def longest_without_repeat(text):
     no_repeat_strings_set = set()
